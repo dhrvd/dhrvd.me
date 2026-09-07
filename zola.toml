@@ -1,0 +1,6 @@
+title = "dhrvd"
+base_url = "https://dhrvd.me"
+
+compile_sass = true
+build_search_index = false
+

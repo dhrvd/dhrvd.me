@@ -1,0 +1,28 @@
+@import "normalize";
+
+:root {
+  --bg: rgb(16, 15, 15);
+  --tx: rgb(206, 205, 195);
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Geist"), url("Geist[wght].woff2") format("woff2") tech(variations);
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Geist"), url("Geist-Italic[wght].woff2") format("woff2") tech(variations);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--tx);
+  font: 16px "Geist";
+  max-width: 640px;
+  margin: 0 auto;
+}

@@ -1,0 +1,65 @@
+$black: #100F0F;
+$paper: #FFFCF0;
+
+$base-50: #F2F0E5;
+$base-100: #E6E4D9;
+$base-150: #DAD8CE;
+$base-200: #CECDC3;
+$base-300: #B7B5AC;
+$base-400: #9F9D96;
+$base-500: #878580;
+$base-600: #6F6E69;
+$base-700: #575653;
+$base-800: #403E3C;
+$base-850: #343331;
+$base-900: #282726;
+$base-950: #1C1B1A;
+
+$purple-400: #8B7EC8;
+$purple-600: #5E409D;
+
+:root {
+  color-scheme: light dark;
+
+  --bg: #{$paper};
+  --tx-2: #{$base-600};
+  --tx: #{$black};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #{$black};
+    --tx-2: #{$base-500};
+    --tx: #{$base-200};
+  }
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local("Geist"), url("Geist[wght].woff2") format("woff2") tech(variations);
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local("Geist"), url("Geist-Italic[wght].woff2") format("woff2") tech(variations);
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local("Geist Mono"),
+    url("GeistMono[wght].woff2") format("woff2") tech(variations);
+}
+
+:root {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+}

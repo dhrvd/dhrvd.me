@@ -24,6 +24,8 @@ $purple-600: #5E409D;
   --bg: #{$paper};
   --tx-2: #{$base-600};
   --tx: #{$black};
+
+  --pu: #{$purple-600};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,6 +33,8 @@ $purple-600: #5E409D;
     --bg: #{$black};
     --tx-2: #{$base-500};
     --tx: #{$base-200};
+
+    --pu: #{$purple-400};
   }
 }
 
@@ -62,4 +66,9 @@ $purple-600: #5E409D;
 :root {
   --font-sans: "Geist", system-ui, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, monospace;
+}
+
+::selection {
+  background-color: var(--pu);
+  color: var(--bg);
 }

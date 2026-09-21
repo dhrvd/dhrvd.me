@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="color-scheme" content="light dark">
+		<link rel="icon" href="data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' width='12' height='12' %3E%3Ccircle cx='24' cy='24' r='24' fill='%238B7EC8'/%3E%3C/svg%3E" type="image/svg+xml">
+		<link rel="preload" as="font" href="{{ get_url(path='Geist.woff2') }}" type="font/woff2" crossorigin>
+		<link rel="preload" as="font" href="{{ get_url(path='GeistMono.woff2') }}" type="font/woff2" crossorigin>
+		<link rel="preload" as="font" href="{{ get_url(path='Geist-Italic.woff2') }}" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="{{ get_url(path='main.css', cachebust=true) }}">
+		<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+		{% block head %}{% endblock head %}
+	</head>
+	<body>
+		<main>
+			{% block content %}{% endblock content %}
+		</main>
+		<footer>
+			<p>
+				dhruv deshpande &copy; {{ now() | date(format="%Y") }}
+				<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" lang="en"><abbr title="Creative Commons: Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</abbr></a>
+			</p>
+		</footer>
+	</body>
+</html>

@@ -22,6 +22,7 @@ $purple-600: #5E409D;
   color-scheme: light dark;
 
   --bg: #{$paper};
+  --tx-3: #{$base-300};
   --tx-2: #{$base-600};
   --tx: #{$black};
 
@@ -31,6 +32,7 @@ $purple-600: #5E409D;
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #{$black};
+    --tx-3: #{$base-700};
     --tx-2: #{$base-500};
     --tx: #{$base-200};
 
